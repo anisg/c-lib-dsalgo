@@ -39,7 +39,7 @@ using gcc
 - `void *vzone(Vector *v)`: return the adress of the first element.
 - `int vremove(Vector **v)`: release vector memory.
 
-#####\#example 1: initialize a vector, add elements, and print it
+##### \#example 1: initialize a vector, add elements, and print it
 
 ```C
 int A[] = {1,2,3};
@@ -56,7 +56,7 @@ vpush(v, &x);                       // add x
 vprint(v, &itos); //output "[1,2,3,4]\n"
 ```
 
-#####\#example 2: remove last element using vpop
+##### \#example 2: remove last element using vpop
 
 ```
 //... from previous example
@@ -65,7 +65,7 @@ vpop(v);
 vprint(v, &itos); //output "[1,2,3]\n"
 ```
 
-#####\#example 3: iterate through a vector
+##### \#example 3: iterate through a vector
 
 ```C
 //...
@@ -76,7 +76,7 @@ for (int i = 0; i < vsize(v); i += 1){
 }
 ```
 
-#####\#example 4: iterate through a vector by accessing its zone in memory
+##### \#example 4: iterate through a vector by accessing its zone in memory
 
 ```C
 //...
@@ -99,14 +99,14 @@ for (int i = 0; i < vsize(v); i += 1){
 - `char *str(const char *s)`
 
 
-#####\#example 1: split a string
+##### \#example 1: split a string
 ```C
 Vector *v = split("how are you?", " ");
 
 vprintstr(v); //output: "['how', 'are', 'you?']\n"
 ```
 
-#####\#example 2: check if a string begins by another string
+##### \#example 2: check if a string begins by another string
 ```C
 char *s = "abc hello";
 
@@ -114,7 +114,7 @@ printf("%d\n", startswith(s, "123")); //output "0\n"
 printf("%d\n", startswith(s, "abc")); //output "1\n"
 ```
 
-#####\#example 3: add at the end of string another string
+##### \#example 3: add at the end of string another string
 ```C
 char *s = str("123");
 
